@@ -14,7 +14,6 @@ function prebuild_kivy() {
 		try git clone https://github.com/kivatu/kivy.git kivy
 	fi
 
-	try cp kivy/kivy/lib/klaatu/libklaatu_window.so ../libs
 }
 
 function build_kivy() {
