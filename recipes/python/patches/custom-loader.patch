@@ -22,7 +22,7 @@
 +        libpymodules = dlopen(pathbuf, RTLD_NOW);
 +
 +        if (libpymodules == NULL) {
-+            //abort();
++            printf("%s", dlerror());
 +        }
 +    }
 +        
@@ -41,7 +41,7 @@
 +        rv = dlsym(libpymodules, funcname);
 +        if (rv != NULL) {
 +            return rv;
-+        }
++        } else { printf("%s", dlerror()); }
 +    }
 +
 +
