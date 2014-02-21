@@ -1,8 +1,9 @@
 LOCAL_PATH:= $(call my-dir)
 include $(CLEAR_VARS)
 
+LOCAL_ADDITIONAL_DEPENDENCIES += libklaatu_window
 LOCAL_SHARED_LIBRARIES := \
-	libc
+	libc libklaatu_window
 
 LOCAL_MODULE:= libpython2.7
 LOCAL_MODULE_TAGS := eng
