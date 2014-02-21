@@ -11,7 +11,7 @@ function prebuild_kivy() {
 	cd $BUILD_PATH/kivy
 
 	if [ ! -d kivy ]; then
-		try git clone https://github.com/kivatu/kivy_old.git kivy
+		try git clone https://github.com/kivatu/kivy.git kivy
 	fi
 
 	try cp kivy/kivy/lib/klaatu/libklaatu_window.so ../libs
