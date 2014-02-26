@@ -13,7 +13,7 @@ ANDROIDNDK := $(KLAATU_NDK)
 ANDROIDSDK := $(KLAATU_NDK)
 ANDROIDNDKVER := r8e
 ANDROIDAPI := 14
-KIVY_TARGET_KLAATU := 1
+export KIVY_TARGET_KLAATU := 1
 
 # This is a shared library, so add .so to the end of the name
 LOCAL_MODULE_SUFFIX := $(TARGET_SHLIB_SUFFIX)
